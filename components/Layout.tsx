@@ -17,7 +17,7 @@ export const Layout: preact.FunctionComponent<LayoutProps> = ({
         class="flex flex-col items-center p-5 md:p-10 lg:p-30 w-full overflow-hidden min-h-screen"
         style="background-image:url('https://dash.deno.com/assets/background-pattern.svg')"
       >
-      { children }
+        { children }
       </div>
     </>
   )

@@ -20,6 +20,9 @@ Most likely you will run into something like this:
 
 React has different children definition than preact - it is expected to be a type error.
 
+# Want more?
+
+Submit GHI/PR.
 
 
 # fresh project

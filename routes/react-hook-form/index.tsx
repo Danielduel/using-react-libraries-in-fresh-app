@@ -1,5 +1,5 @@
 import { Layout } from "@/Layout.tsx";
-import Island from "_/Island-react-hook-form.tsx";
+import Island from "_/react-hook-form.tsx";
 
 export default () => {
   return (
@@ -9,4 +9,4 @@ export default () => {
       <Island />
     </Layout>
   );
-}
+};
