@@ -4,13 +4,15 @@
 
 import config from "./deno.json" assert { type: "json" };
 import * as $0 from "./routes/index.tsx";
-import * as $1 from "./routes/react-hook-form/index.tsx";
+import * as $1 from "./routes/parse-json/index.tsx";
+import * as $2 from "./routes/react-hook-form/index.tsx";
 import * as $$0 from "./islands/react-hook-form.tsx";
 
 const manifest = {
   routes: {
     "./routes/index.tsx": $0,
-    "./routes/react-hook-form/index.tsx": $1,
+    "./routes/parse-json/index.tsx": $1,
+    "./routes/react-hook-form/index.tsx": $2,
   },
   islands: {
     "./islands/react-hook-form.tsx": $$0,

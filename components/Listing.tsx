@@ -26,11 +26,11 @@ const ListingItem: preact.FunctionComponent<ListingItem> = ({
   repositoryIslandFileUrl,
 }) => {
   return (
-    <div class="flex mb-2">
-      <h2 class="text-3xl font-bold text-gray-400">{npmPackageName}</h2>
+    <div class="flex mb-2 w-full">
+      <h2 class="text-3xl font-bold text-gray-400 w-1/2 text-right">{npmPackageName}</h2>
       <div class="border-l-1 pl-2 ml-2 flex flex-col gap-x-2">
         <ListingItemLink url={exampleUrl} label="Link to example" />
-        <ListingItemLink external url={repositoryIslandFileUrl} label="Link to repository" />
+        { repositoryIslandFileUrl && <ListingItemLink external url={repositoryIslandFileUrl} label="Link to repository" /> }
       </div>
     </div>
   );
@@ -38,7 +38,7 @@ const ListingItem: preact.FunctionComponent<ListingItem> = ({
 
 export const Listing: preact.FunctionComponent = () => {
   return (
-    <div>
+    <div class="w-full">
       {ListingData.map((item) => (
         <ListingItem key={item.npmPackageName} {...item} />
       ))}

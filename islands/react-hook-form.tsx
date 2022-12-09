@@ -1,4 +1,4 @@
-import { useForm, SubmitHandler } from "react/react-hook-form";
+import { useForm } from "esmsh/react/react-hook-form";
 
 type HackToAvoidReactPreactTypeMismatch = () => void; // help needed
 const IslandReactHookForm: preact.FunctionComponent = () => {

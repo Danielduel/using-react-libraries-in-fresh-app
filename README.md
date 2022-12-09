@@ -6,10 +6,8 @@ You import
 `https://esm.sh/{npm name with npm version}?alias=react:preact/compat,react-dom:preact/compat&deps=preact@{preact version that you use in your fresh app}`
 
 For example:
-* `@tanstack/react-query@4.19.1` while using fresh with `preact@10.11.0`
-`https://esm.sh/@tanstack/react-query@4.19.1?alias=react:preact/compat,react-dom:preact/compat&deps=preact@10.11.0`
-* `react-hook-form@7.40.0` while using fresh with `preact@10.11.0`
-`https://esm.sh/react-hook-form@7.40.0?alias=react:preact/compat,react-dom:preact/compat&deps=preact@10.11.0`
+* `@tanstack/react-query@4.19.1` while using fresh with `preact@10.11.0`: `https://esm.sh/@tanstack/react-query@4.19.1?alias=react:preact/compat,react-dom:preact/compat&deps=preact@10.11.0`
+* `react-hook-form@7.40.0` while using fresh with `preact@10.11.0`: `https://esm.sh/react-hook-form@7.40.0?alias=react:preact/compat,react-dom:preact/compat&deps=preact@10.11.0`
 
 Most likely you will run into something like this:
 ```
@@ -18,7 +16,22 @@ Most likely you will run into something like this:
 </ReactComponent>
 ```
 
-React has different children definition than preact - it is expected to be a type error.
+React has different children definitions than preact - it is expected to be a type error.
+(event handler types are different too)
+
+# Using general-purpose libraries in Deno/fresh
+
+Short answer:
+
+You import
+`https://esm.sh/{npm name with npm version}`
+
+For example:
+* `parse-json@6.0.2` will be `https://esm.sh/parse-json@6.0.2`
+
+Deno docs:
+* https://deno.land/manual/node/cdns
+* https://deno.land/manual/node/npm_specifiers
 
 # Want more?
 
